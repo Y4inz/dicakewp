@@ -184,7 +184,45 @@ header{
   margin-right: 14px;
   margin-top: 22px;
 }
+.footer{
+  background-color: #f57eb6;
+  display: flex;
+  justify-content: center;
+  
+}
+.logo-footer{
+  display: flex;
+  justify-content: center;
+}
+.footer figure img{
+  margin-top: 28px;
+  width: 80px;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
 
+}
+.icons figure i{
+
+  text-align: center;
+  cursor: pointer;
+  color: #fefefe;
+  font-size: 28px;
+  padding: 14px;
+  animation: all 1s;
+}
+.icons figure i:hover{
+  background-color: #fefefe;
+  border-radius: 50%;
+  color: #ad1aac;
+}
+.derechos{
+  text-align: center;
+  font-size: 12px;
+  color: #ad1aac;
+  margin: 12px 0 30px 0;
+}
 /*Media Queryes*/
 @media only screen and (max-width: 1320px){
   header{
