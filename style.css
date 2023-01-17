@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #fefefe;
+}
+header{
+  width: 100%;
+  height: 80%;
+  background: #f57eb6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.logos{
+  display: flex;
+  align-items: center;
+}
+.logo-navbar{
+  width: 50px;
+  margin-right: 20px;
+}
+.logo{
+  font-family: 'Fredoka One', cursive;
+  font-weight: 200;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fefefe;
+}
+.hamburger{
+  display: none;
+  margin: 10px 5px;
+}
+.nav-bar ul{
+  display: flex;
+}
+.nav-bar ul li a{
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 10px 5px;
+}
+.nav-bar ul li a:hover{
+  color: #ad1aac;
+  background: #fefefe;
+}
+.nav-bar ul li a.active{
+  color: #ad1aac;
+  background: #fefefe;
+}
+.nav-bar ul li a.active:hover{
+  color: #fefefe;
+  background: #ad1aac;
+}
+.banner{
+  width: 100%;
+  height: 400px;
+  background-color: #f59bbb;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+}
+.titulo-seccion{
+  text-align: center;
+  padding-top: 48px;
+  margin-bottom: 24px;
+  font-size: 34px;
+  color: #d4a373;
+}
+.branches>.titulo-seccion{
+  color: #fefefe;
+}
+.flavours-margin{
+  /* height: 345px; */
+  padding: 0 50px;
+  background-color: #fefefe;
+}
+.flavours-container{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sabor{
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: #f59bbb;
+  padding: 0px;
+  border: 5px dashed #f57eb6;
+}
+
+
+.sabor figure > img{
+  width: 100%;
+}
+
+.flavours-margin>p{
+  color: #f57eb6;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+.branches{
+  background-color: #f59bbb;
+}
+.sucursales{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sucursal{
+  height: 340px;
+  width: 280px;
+  background-color: #fefefe;
+  border-radius: 18px;
+  -webkit-box-shadow: 4px 4px 19px -7px rgba(0,0,0,0.25);
+  -moz-box-shadow: 4px 4px 19px -7px rgba(0,0,0,0.25);
+  box-shadow: 4px 4px 19px -7px rgba(0,0,0,0.25);
+  margin: 24px;
+  margin-bottom: 54px;
+}
+.branch-photo{
+  width: 252px;
+  height: 252px;
+  background-color: gray;
+  position: relative;
+  left: 14px;
+  top: 14px;
+  border-radius: 14px;
+}
+.branch-photo>img{
+  border-radius: 14px;
+}
+.info-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.branch-name{
+  color: #f57eb6;
+  margin-left: 14px;
+  margin-top: 22px;
+}
+.branch-address{
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 14px;
+  color: gray;
+  display: block;
+}
+.maps-branch{
+  cursor: pointer;
+  color: #fefefe;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 30px;
+  height: 45px;
+  width: 80px;
+  background-color: #f57eb6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+  margin-top: 22px;
+}
+
+/*Media Queryes*/
+@media only screen and (max-width: 1320px){
+  header{
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px){
+  header{
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 900px){
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+  .nav-bar{
+    height: 0px;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #f59bbb;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .nav-bar.active{
+    height: 450px;
+  }
+  .nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul{
+    opacity: 100%;
+  }
+  .nav-bar ul li a{
+    margin-bottom: 12px;
+  }
+}
